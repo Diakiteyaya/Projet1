@@ -1,0 +1,330 @@
+Last login: Fri Nov 10 16:05:44 on ttys000
+yayadiakite@MacBook-Air-de-Yaya ~ % cd documents 
+yayadiakite@MacBook-Air-de-Yaya documents % cd cours-git 
+yayadiakite@MacBook-Air-de-Yaya cours-git % git log
+commit 0575082d2c946497a41a94fcec1ee2e1a8791d19 (HEAD -> main, tag: 90cc7875665de307002e786a4083626e5a4cac2f, origin/main)
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 15:53:23 2023 +0100
+
+    ajout d'une ligne
+
+commit 90cc7875665de307002e786a4083626e5a4cac2f
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 14:45:38 2023 +0100
+
+    suppression d'une ligne
+
+commit fcd2183f657f7e42311f3aed92bc5b56156ae608
+Merge: 23761c1 73d99ae
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 14:17:21 2023 +0100
+
+    résolution du conflit
+
+commit 23761c17f8a9557594e5e32e40ae3da952fa718c
+Author: Diakiteyaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 14:06:27 2023 +0100
+yayadiakite@MacBook-Air-de-Yaya cours-git % git tag -a Mon_site_V4 (version)
+zsh: unknown file attribute: v
+yayadiakite@MacBook-Air-de-Yaya cours-git % cd ..
+yayadiakite@MacBook-Air-de-Yaya documents % cd premierprojet 
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git BRANCH_1
+git: 'BRANCH_1' is not a git command. See 'git --help'.
+yayadiakite@MacBook-Air-de-Yaya premierprojet % gittbranch BRANCH_1 
+zsh: command not found: gittbranch
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git branch BRANCH_1
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya premierprojet % cd ..
+yayadiakite@MacBook-Air-de-Yaya documents % cd cours-git 
+yayadiakite@MacBook-Air-de-Yaya cours-git % git branch BRANCH_1
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya cours-git % cd ..
+yayadiakite@MacBook-Air-de-Yaya documents % cd premierprojet 
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git branch BRANCH_1
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git branch -1
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git branch -a
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git config --inset
+error: unknown option `inset'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git config --unset 
+error: wrong number of arguments, should be from 1 to 2
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+yayadiakite@MacBook-Air-de-Yaya premierprojet % cd
+yayadiakite@MacBook-Air-de-Yaya ~ % git branch
+fatal: not a git repository (or any of the parent directories): .git
+yayadiakite@MacBook-Air-de-Yaya ~ % git log 
+fatal: not a git repository (or any of the parent directories): .git
+yayadiakite@MacBook-Air-de-Yaya ~ % git log 
+fatal: not a git repository (or any of the parent directories): .git
+yayadiakite@MacBook-Air-de-Yaya ~ % cd documents 
+yayadiakite@MacBook-Air-de-Yaya documents % cd premierprojet 
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git log 
+commit b896e53feb579ddd0277c730fdec019e863164c5 (HEAD -> main, tag: ed5d69dcdef96d162ce7866ceee2fded6643da61)
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 15:56:43 2023 +0100
+
+    ajour d'une nouvelle ligne
+
+commit 07fc3e5efb9364c9a61b79d263b5bec02d5e9eaa
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 15:46:32 2023 +0100
+
+    modifications
+
+commit ed5d69dcdef96d162ce7866ceee2fded6643da61
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 15:33:55 2023 +0100
+
+    ajout d'une ligne
+
+commit 446cfcd0041fc0896f9c1bf83084333c7e35bcea
+Author: Yaya <148557823+Diakiteyaya@users.noreply.github.com>
+Date:   Fri Nov 10 15:22:26 2023 +0100
+
+    création d'un fichier
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git config --unset
+error: wrong number of arguments, should be from 1 to 2
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git config --global --unset color value: auto
+error: wrong number of arguments, should be from 1 to 2
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git config --global --unset color.diff       
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git branch BRANCHE_1                         
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya premierprojet % [color "branch"]
+    current = auto
+
+zsh: bad pattern: [color
+yayadiakite@MacBook-Air-de-Yaya premierprojet % ls -la
+total 48
+drwxr-xr-x@  9 yayadiakite  staff   288 10 nov 16:02 .
+drwx------@ 50 yayadiakite  staff  1600 10 nov 16:11 ..
+-rw-r--r--@  1 yayadiakite  staff  6148 10 nov 14:00 .DS_Store
+drwxr-xr-x  14 yayadiakite  staff   448 10 nov 16:02 .git
+-rw-r--r--@  1 yayadiakite  staff     6 10 nov 15:45 .gitignore
+-rw-r--r--@  1 yayadiakite  staff    12 10 nov 15:21 Gitcommit
+-rw-r--r--@  1 yayadiakite  staff   859 10 nov 15:55 index.html Bonjour.html
+-rw-r--r--@  1 yayadiakite  staff  1374 13 oct 15:26 style.css
+drwxr-xr-x   4 yayadiakite  staff   128 10 nov 10:02 tmp
+yayadiakite@MacBook-Air-de-Yaya premierprojet % ls  
+Gitcommit		index.html Bonjour.html	style.css		tmp
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git push -u origin main 
+To https://github.com/Diakiteyaya/Projet1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Diakiteyaya/Projet1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+yayadiakite@MacBook-Air-de-Yaya premierprojet % git branch BRANCH_1
+error: invalid color value: auto
+fatal: bad config variable 'color.branch.current' in file '/Users/yayadiakite/.gitconfig' at line 14
+yayadiakite@MacBook-Air-de-Yaya premierprojet % nano ~/.gitconfig
+
+
+  UW PICO 5.09                         File: /Users/yayadiakite/.gitconfig                          Modified  
+
+[user]
+        name = Yaya
+        email = 148557823+Diakiteyaya@users.noreply.github.com
+[color]
+        branch = auto
+        head = auto
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[color "branch"]
+        nom-couleur = auto
+        current = always 
+        auto = auto
+        
+
+
+
+
+^G Get Help       ^O WriteOut       ^R Read File      ^Y Prev Pg        ^K Cut Text       ^C Cur Pos        
+^X Exit           ^J Justify        ^W Where is       ^V Next Pg        ^U UnCut Text     ^T To Spell       
